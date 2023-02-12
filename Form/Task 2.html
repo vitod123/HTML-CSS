@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        body {
+            background-image: url(./blue-sea-water-and-beach-from-birds-eye-view-for-background-119-small.jpg);
+            background-size:cover;            
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;  
+        }
+
+        form {
+            background-color: none;
+            padding: 40px;
+            box-shadow: 0 5px 15px black;
+            border-radius: 2px;
+            max-width: 700px;
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form>label {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            align-items: center;   
+            margin: 0px;         
+        }
+
+        h2 {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        h5{
+            padding: 0px;
+            margin: 10px; 
+            margin-left: 0px;   
+        }
+
+        input {
+            background-color: white;
+            border: none;
+            padding: 5px;
+            padding-left: 15px;
+            margin-left: 30px;
+        }
+
+        button {
+            background:none;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 2px;
+            border: 2px solid white;
+            width: 81%;
+            margin-left: 130px;
+        }
+
+        .conteiner{
+            display: flex;
+            gap: 10px;
+        }
+
+        .item1{
+            width: 45%;
+        }
+        
+        .item2{
+            width: 30%;
+        }
+
+        form select{
+            margin-left: 30px;
+            padding: 7px;
+            outline: none;
+        }
+
+        .try{
+            margin: 0px;
+        }
+
+        hr{
+            width: 100%;
+            color: gray;
+        }
+
+        .bigInput{
+            width: 858;
+            margin-left: 30px;
+            padding: 7px;
+            outline: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h2>Contact form</h2>
+
+        <h5>Please fill in your information and we'll be sending your order.</h5>
+
+        <label>Your name
+            <div class="conteiner">
+                <input class="item1" type="text" placeholder="first name" />
+                <input class="item1" type="text" placeholder="last name" />
+            </div>
+        </label>
+        
+        <label>Your email
+            <input type="email" placeholder="your_mail@mail.com" />
+        </label>
+
+        <label>Phone *
+            <div class="conteiner">
+                <input class="item2" type="tel" placeholder="000" />
+                <input class="item2" type="tel" placeholder="000" />
+                <input class="item2" type="tel" placeholder="0000" />
+            </div>
+        </label>
+
+        <label class="try">Message subject *
+            <select>
+                <option selected>Other</option>
+                <option>+48</option>
+                <option>+380</option>
+            </select>
+        </label>
+        
+        <label>Message *
+            <textarea class="bigInput" rows="4" cols="50">
+                
+            </textarea>
+        </label>
+
+        <hr>
+
+        <button type="button">SUBMIT FORM</button>
+
+    </form>
+</body>
+</html>

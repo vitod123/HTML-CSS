@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Task</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background-color: white;
+        }
+
+        header {
+            overflow: hidden;
+        }
+
+        header nav {
+            background-color: white;
+            padding: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            color: black;
+            height: 50px;
+        }
+
+        header ul {
+            float: left;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        nav li a {
+            color: black;
+            padding: 0 5px;
+            text-decoration: none;
+        }
+
+        h1{
+            margin-left: 0px;
+            margin: 10px;
+            float: left;
+        }
+
+        .headerRight{
+            float: right;
+        }
+
+        .m0{
+            margin: 0px;
+        }
+
+        .img1{
+            height: 20px;
+            width: 20px;
+        }
+
+        .conteiner{
+            display: flex;
+            gap: 10px;
+            margin: 0px;
+        }
+
+        .try{
+            font-size: 48px;
+        }
+
+        .item1{
+            width: 700px;   
+            padding-top: 150px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .item2{
+            margin-right: 0px;
+            width: 650px;
+            height: 700px;
+            margin: 0px;
+        }
+
+        button{
+            border: 1px solid #c0c0c0;
+            border-radius: 5%;
+            width: 100px;
+            height: 40px;
+            display: inline-block;
+            line-height: 40px;
+            background-color: white;
+            color: gray;
+        }
+
+        .try1{
+            font-size: 32px;
+        }
+
+        .item3{
+            width: 700px;   
+            padding-top: 100px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .item4{
+            margin-right: 0px;
+            width: 450px;
+            height: 500px;
+            margin: 0px;
+            margin-left: 0px;
+        }
+
+        .button1{
+            border: 1px solid #c0c0c0;
+            border-radius: 5%;
+            width: 100px;
+            height: 40px;
+            display: inline-block;
+            line-height: 40px;
+            background-color: white;
+            color: gray;
+        }
+
+        .try2{
+            font-size: 48px;
+            text-align: center;
+            margin-left: 550px;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .conteiner1{
+            display: flex;
+            margin: 0px;
+            margin-top: 40px;
+            width: 800px;
+        }
+
+        .item5{
+            width: 384px;
+            height: 300px;
+        }
+
+        .item6{
+            width: auto;
+            height: 300px;
+        }
+
+        .conteiner2{
+            display: grid;
+            margin: 0px;
+            margin-top: 30px;
+            background-color: #B6B6B6;
+            gap: 2px;
+            grid-template-columns: 449px repeat(2, 448px);
+            grid-template-rows: 300px;
+        }
+
+        .item7{
+            text-align: center;
+            color: black;
+            font-size: 130%;
+            font-weight: bold;
+            background-color: white;
+            padding-top : 40px;
+            padding-bottom: 0px;
+        }
+
+        .try3{
+            width: 60px;
+        }
+
+        /**/
+
+        form {
+            background-color: none;
+            padding: 40px;
+            max-width: 700px;
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        form>label {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            align-items: center;   
+            margin: 10px;   
+            margin-left: 0px;
+
+        }
+
+        .h2 {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .h5{
+            padding: 0px;
+            margin: 10px; 
+            margin-left: 0px;   
+        }
+
+        input {
+            background-color: white;
+            border: none;
+            padding: 5px;
+            padding-left: 15px;
+            margin-left: 30px;
+        }
+
+        .button2 {
+            margin-left: 487px;
+            border: 1px solid #c0c0c0;
+            border-radius: 5%;
+            width: 100px;
+            height: 40px;
+            display: inline-block;
+            line-height: 40px;
+            background-color: white;
+            color: gray;
+        }
+
+        .conteiner3{
+            display: flex;
+            gap: 10px;
+        }
+
+        .item8{
+            width: 45%;
+        }
+        
+        .item9{
+            margin-left: 0px;
+            border: 1px solid #c0c0c0;
+            border-radius: 5%;
+            width: 35%;
+            height: 20px;
+            display: inline-block;
+            line-height: 40px;
+            background-color: white;
+            color: gray;
+        }
+
+        form select{
+            margin-left: 0px;
+            padding: 7px;
+            outline: none;
+        }
+
+        .try4{
+            margin: 0px;
+        }
+
+        .hr1{
+            width: 100%;
+            color: gray;
+        }
+
+        .bigInput{
+            /* width: 858; */
+            margin-left: 0px;
+            padding: 7px;
+            outline: none;
+        }
+
+        .try5{
+            margin: 0px;
+        }
+
+        .try6{
+            margin: 0px;
+            margin-left: 200px;
+        }
+
+        .try7{
+            margin: 0px;
+            margin-left: 200px;
+        }
+
+        .try8{
+            margin-top: 8px;
+            margin-left: 0px;
+        }
+
+        .try9{
+            margin-left: 10px;
+        }
+
+        .try10{
+            margin-left: 0px;
+            margin: 0px;
+        }
+
+        .conteiner4{
+            display: flex;
+            gap: 0px;
+        }
+
+        .headerCenter{
+            margin: 40px;
+            text-align: center;
+        }
+
+        .img2{
+            border: 2px black solid;
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        .img3{
+            width: 20px;
+            margin: 10px;
+        }
+
+        .try11{
+            margin-left: 610px;
+            margin-bottom: 10px;
+        }
+
+        .m1{        
+            margin-top: 40px;            
+        }
+
+        .p1{
+            font-size: 16px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h1>TOUR-GIUDE</h1>
+            <ul>
+                <li><a href="">Stories</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Write to us</a></li>
+            </ul>
+            <ul class="headerRight">
+                <li>
+                    <img class="img1" src="./Images/twitter.png" alt="">
+                </li>
+                <li>
+                    <img class="img1" src="./Images/facebook.png" alt="">
+                </li>
+                <li>
+                    <img class="img1" src="./Images/instagram .png" alt="">
+                </li>
+                <li>
+                    <img class="img1" src="./Images/youtube.png" alt="">
+                </li>
+                <li>
+                    <img class="img1" src="./Images/gmail.png" alt="">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr class="m0">
+
+    <div class="conteiner">
+        <div class="item1">
+
+            <span class="try">Let's hit  the road</span>
+
+            <br><br>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Suscipit aperiam, 
+                deserunt recusandae animi labore repudiandae eligendi reiciendis illo architecto ab! 
+                Omnis fugiat qui fuga eum quis repudiandae odit sint officiis dolore corporis? 
+                Accusantium fugit illo omnis placeat maxime praesentium tempora rerum. 
+                Enim vel voluptates omnis repudiandae. 
+                Odit quasi aspernatur hic!
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Reiciendis, accusamus? 
+                Perspiciatis deserunt cum suscipit modi ipsam sequi tenetur obcaecati aut.
+            </p>
+            
+            <br>
+
+            <button>
+                START
+            </button>
+
+        </div>
+
+        <div>
+            <img class="item2" src="./Images/fire1.jpg" alt="">
+        </div>
+
+    </div>
+
+    <!---->
+
+    <hr class="m0">
+
+    <div class="conteiner">
+
+        <div>
+            <img class="item4" src="./Images/fire2.jpg" alt="">
+        </div>
+
+        <div class="item3">
+
+            <span class="try1">Story</span>
+
+            <br><br>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Suscipit aperiam, 
+                deserunt recusandae animi labore repudiandae eligendi reiciendis illo architecto ab! 
+                Omnis fugiat qui fuga eum quis repudiandae odit sint officiis dolore corporis? 
+                Accusantium fugit illo omnis placeat maxime praesentium tempora rerum. 
+                Enim vel voluptates omnis repudiandae. 
+                Odit quasi aspernatur hic!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Libero repudiandae nam eaque fugit molestias? Eum repellat voluptatum, 
+                natus aliquid ducimus ut consequuntur 
+                dignissimos necessitatibus laborum facilis impedit expedita animi quos.
+            </p>
+            
+            <br>
+
+            <button class="button1">
+                MORE
+            </button>
+
+        </div>
+
+    </div>
+
+        <!---->  
+
+    <hr class="m0">
+
+    <div class="conteiner">
+
+        <div class="item3">
+
+            <span class="try1">Story</span>
+
+            <br><br>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Suscipit aperiam, 
+                deserunt recusandae animi labore repudiandae eligendi reiciendis illo architecto ab! 
+                Omnis fugiat qui fuga eum quis repudiandae odit sint officiis dolore corporis? 
+                Accusantium fugit illo omnis placeat maxime praesentium tempora rerum. 
+                Enim vel voluptates omnis repudiandae. 
+                Odit quasi aspernatur hic!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Libero repudiandae nam eaque fugit molestias? Eum repellat voluptatum, 
+                natus aliquid ducimus ut consequuntur 
+                dignissimos necessitatibus laborum facilis impedit expedita animi quos.
+            </p>
+            
+            <br>
+
+            <button class="button1">
+                MORE
+            </button>
+        </div>
+
+        <div>
+            <img class="item4" src="./Images/fire3.jpg" alt="">
+        </div>     
+
+    </div>
+
+    <hr class="m0">
+
+    <!---->
+
+    <div class="m1"></div>
+
+    <span class="try2">Gallery</span>
+
+    <!---->
+
+    <div class="conteiner1">
+        <div>
+            <img class="item5" src="./Images/line1.jpg" alt="">
+        </div>
+        <div>
+            <img class="item5" src="./Images/line2.jpg" alt="">
+        </div>
+        <div>
+            <img class="item6" src="./Images/line3.jpg" alt="">
+        </div>
+        <div>
+            <img class="item5" src="./Images/line4.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="m1"></div>
+
+    <span class="try2">Features</span>
+
+    <div class="conteiner2">
+        <div class="item7">
+            <img class="try3" src="./Images/plane.png" alt="">
+            <h5 class="">
+                One
+            </h5>
+            <p class="p1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Lorem ipsum adipisicing elit.
+            </p>
+        </div>
+        <div class="item7">
+            <img class="try3" src="./Images/map.png" alt="">
+            <h5 class="">
+                Two
+            </h5>
+            <p class="p1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </p>
+        </div>
+        <div class="item7">
+            <img class="try3" src="./Images/movie.png" alt="">
+            <h5 class="">
+                Three
+            </h5>
+            <p class="p1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="item7">
+            <img class="try3" src="./Images/alarm.png" alt="">
+            <h5 class="">
+                Four
+            </h5>
+            <p class="p1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Lorem, ipsum dolor.
+            </p>
+            <br>
+        </div>
+        <div class="item7">
+            <img class="try3" src="./Images/face_id.png" alt="">
+            <h5 class="">
+                Five
+            </h5>
+            <p class="p1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Lorem, ipsum dolor.
+            </p>
+            <br>
+        </div>
+        <div class="item7">
+            <img class="try3" src="./Images/atom.png" alt="">
+            <h5 class="">
+                Six
+            </h5>
+            <p class="p1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Lorem ipsum dolor sit amet adipisicing elit.
+            </p>
+            <br>
+        </div>
+    </div>
+
+    <div class="m1"></div>
+
+    <span class="try2">Write to us</span>
+
+    <!---->
+
+    <form>
+
+        <h5 class="try5">Name: <span class="try6">Email: </span> <span class="try7">Phone: </span> </h5>
+        <div class="conteiner3">
+            <input class="item9" type="text" placeholder="" />
+            <input class="item9" type="email" placeholder="" />
+            <input class="item9" type="tel" placeholder="" />
+        </div>
+
+        <div class="conteiner3">Contact me via:
+            <div class="try10">
+                <label>
+                    <input type="radio" name="type" />Email
+                </label>
+                <label>
+                    <input type="radio" name="type" />Phone
+                </label>
+                <label>
+                    <input type="radio" name="type" />Telegram
+                </label>
+            </div>
+        </div>
+
+        <h5 class="try5">Topic: </h5>
+        <select>
+            <option selected>Post my story</option>
+            <option>Unknown</option>
+            <option>Unknown</option>
+        </select>
+        
+        <h5 class="try5">Message: </h5>
+        <textarea class="bigInput" rows="10" cols="50">   
+        </textarea>
+
+
+        <div class="conteiner3">
+            <label class="try8">
+                <input class="try8" type="checkbox"/><span class="try9">I am human</span>
+            </label>
+            <button class="button2" type="button">Send</button>
+        </div>
+
+    </form>
+
+    <hr class="m0">
+
+    <nav>
+        <ul class="headerCenter">
+            <li class="img2">
+                <img class="img3" src="./Images/twitter.png" alt="">
+            </li>
+            <li class="img2">
+                <img class="img3" src="./Images/facebook.png" alt="">
+            </li>
+            <li class="img2">
+                <img class="img3" src="./Images/instagram .png" alt="">
+            </li>
+            <li class="img2">
+                <img class="img3" src="./Images/youtube.png" alt="">
+            </li>
+            <li class="img2">
+                <img class="img3" src="./Images/gmail.png" alt="">
+            </li>
+        </ul>
+    </nav>
+
+    <span class="try11">
+        © UNTITLED 2019 
+    </span>
+
+    <div class="m1"></div>
+
+</body>
+</html>
